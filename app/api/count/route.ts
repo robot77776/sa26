@@ -1,4 +1,3 @@
-
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 
@@ -13,6 +12,3 @@ export async function GET() {
       { status: 500 }
     );
   }
-
-  return NextResponse.json({ count: count ?? 0 });
-}
